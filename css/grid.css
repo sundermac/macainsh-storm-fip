@@ -45,3 +45,63 @@ body, p, h1, h2, h3, h4, h5, h6 {
 .col-end-4 {grid-column-end: 4;}
 .col-end-5 {grid-column-end: 5;}
 .col-end-auto {grid-column-end: auto;}
+
+
+/* ---Desktop Library Grid Styles--- */
+.desk-grid-con { 
+   display: grid;   
+   grid-template-columns: repeat(12, 79px);
+   column-gap: 20px;
+   max-width: 1200px;
+   margin: 0 auto;
+   padding-left: 16px;
+   padding-right: 16px;
+}
+
+.desk-grid-full {
+   display: grid;
+   grid-template-columns: 1200px;
+}
+
+.desk-col-span-1 {grid-column: span 1;}
+.desk-col-span-2 {grid-column: span 2;}
+.desk-col-span-3 {grid-column: span 3;}
+.desk-col-span-4 {grid-column: span 4;}
+.desk-col-span-5 {grid-column: span 5;}
+.desk-col-span-6 {grid-column: span 6;}
+.desk-col-span-7 {grid-column: span 7;}
+.desk-col-span-8 {grid-column: span 8;}
+.desk-col-span-9 {grid-column: span 9;}
+.desk-col-span-10 {grid-column: span 10;}
+.desk-col-span-11 {grid-column: span 11;}
+.desk-col-span-12 {grid-column: span 12;}
+.desk-col-span-full {grid-column: 1 / -1;}
+
+.desk-col-start-1 {grid-column-start: 1;}
+.desk-col-start-2 {grid-column-start: 2;}
+.desk-col-start-3 {grid-column-start: 3;}
+.desk-col-start-4 {grid-column-start: 4;}
+.desk-col-start-5 {grid-column-start: 5;}
+.desk-col-start-6 {grid-column-start: 6;}
+.desk-col-start-7 {grid-column-start: 7;}
+.desk-col-start-8 {grid-column-start: 8;}
+.desk-col-start-9 {grid-column-start: 9;}
+.desk-col-start-10 {grid-column-start: 10;}
+.desk-col-start-11 {grid-column-start: 11;}
+.desk-col-start-12 {grid-column-start: 12;}
+.desk-col-start-auto {grid-column-start: auto;}
+
+.desk-col-end-1 {grid-column-end: 1;}
+.desk-col-end-2 {grid-column-end: 2;}
+.desk-col-end-3 {grid-column-end: 3;}
+.desk-col-end-4 {grid-column-end: 4;}
+.desk-col-end-5 {grid-column-end: 5;}
+.desk-col-end-6 {grid-column-end: 6;}
+.desk-col-end-7 {grid-column-end: 7;}
+.desk-col-end-8 {grid-column-end: 8;}
+.desk-col-end-9 {grid-column-end: 9;}
+.desk-col-end-10 {grid-column-end: 10;}
+.desk-col-end-11 {grid-column-end: 11;}
+.desk-col-end-12 {grid-column-end: 12;}
+.desk-col-end-13 {grid-column-end: 13;}
+.desk-col-end-auto {grid-column-end: auto;}
