@@ -10,7 +10,176 @@
     <link href="css/main.css" rel="stylesheet">
     <title>Valentine's Day Package | Couples Resort</title>
 </head>
-<body>
-    
+<body id="desk-body">
+    <h1 class="hidden">Welcome to The Couples Resort</h1>
+    <div id="desk-outline">
+        <!-- Header -->
+        <header class="desk-grid-con">
+                <img src="images/couples_resort_logo.svg" alt="Couples Resort" id="desk-logo" class="desk-col-span-3">
+                <nav id="desk-main-nav" class="desk-col-start-4 desk-col-end-13">
+                    <h2 class="hidden">Main Navigation</h2>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="rooms.html">Rooms</a></li>
+                        <li><a href="packages.html">Packages</a></li>
+                        <li><a href="#">Dining</a></li>
+                        <li><a href="#">Spa</a></li>
+                        <li><a href="activities.html">Activities</a></li>
+                        <li><a href="#">Reservations</a></li>
+                        <li ><a href="#" id="desk-book-now">Book Now</a></li>
+                    </ul>
+                </nav>
+        </header>
+        <main>
+            <!-- Hero -->
+            <section class="desk-grid-full">
+                <img src="images/vp-desk-hero-01.jpg" alt="Close-up of a couple holding hands."
+                    class="desk-col-span-full img-overlap">
+                <div class="desk-grid-con desk-col-span-full img-overlap">
+                    <h2 class="desk-hero-img-h2">
+                        <span>Couples Resort</span><br> Valentine's Day Package
+                    </h2>
+                </div>
+            </section>
+
+            <!-- Hero Content -->
+            <section id="desk-hero-welcome" class="desk-grid-con">
+                <h2 class="hidden">Package Information</h2>
+                <div class="desk-col-start-2 desk-col-end-12">
+                    <p>Escape into a world made just for two. Your 3-night romantic getaway begins with quiet mornings, indulgent afternoons, and candlelit evenings — all wrapped in comfort and care.</p>
+
+                    <p>Includes: three gourmet in-room lunches, two blissful one-hour couples massages, and decadent chocolate-covered strawberries upon arrival — a sweet beginning to your time together.</p>
+
+                    <p>Savings: enjoy &dollar;500 off the regular rate of &dollar;1,500, making it the perfect excuse to celebrate the one who makes every day feel like Valentine's Day.</p>
+
+                    <p>This package is offered only during the week of February 14th.</p>
+                </div>
+            </section>
+            
+            <!-- Chocolate Image -->
+            <div class="desk-grid-con">
+                <img src="images/vp-desk-sec-01.jpg" alt="Decadent chocolate covered strawberries." class="desk-col-start-2 desk-col-end-11">
+            </div>
+
+            <!-- Booking Button -->
+             <div id="booking-button" class="desk-grid-con box">
+                <a href="#" class="desk-col-start-3 desk-col-end-7">Book From &dollar;1,000 CAD</a>
+             </div>
+
+            <!-- FAQ -->
+            <section class="desk-faq desk-grid-con">
+                <h2 class="desk-col-start-2 desk-col-end-12"><span>Couples Resort</span><br>FAQ</h2>
+
+                <div class="desk-faq-items desk-col-start-2 desk-col-end-12">
+                    <details>
+                        <summary>Can We Customize Our Stay (Add Wine, Flowers, or Extra Nights.)?</summary>
+                        <p>Absolutely! You can add romantic extras, such as wine service or floral arrangements, and extend your stay through our booking area, after selecting the package you would like to add.</p>
+                    </details>
+                </div>
+
+                <div class="desk-faq-items desk-col-start-2 desk-col-end-12">
+                    <details>
+                        <summary>Do The Couples Massages Need to Be Booked In Advance?</summary>
+                        <p>Yes! Spa appointments fill quickly during Valentine's week, so we recommend booking your preferred time when reserving your stay.</p>
+                    </details>
+                </div>
+
+                <div class="desk-faq-items desk-col-start-2 desk-col-end-12">
+                    <details>
+                        <summary>What Is The Cancellation Policy?</summary>
+                        <p>Free cancellations up to 72 hours before check-in. Cancellations within 72 hours will incur a &dollar;33 CAD fee (equivalent to one night of the package).</p>
+                    </details>
+                </div>
+            </section>
+
+            <!-- Contact -->
+            <section id="contact-form" class="desk-grid-full">
+                <img src="images/desk-contact.jpg" alt="Couple embracing overlooking a lake"
+                    class="desk-col-span-full img-overlap">
+                <div class="desk-grid-con desk-col-span-full img-overlap">
+                    <h2 class="desk-contact-img-h2"><span>Couples Resort</span><br> Contact</h2>
+                </div>
+            </section>
+
+            <div id="desk-contact-form-text" class="desk-grid-con">
+                <p class="desk-col-start-2 desk-col-end-12">Thank you for taking the time to learn more about our resort and why we are Ontario's number one choice for couples looking to reconnect. For reservation enquiries and further information, please complete our contact form below. Or if you prefer to talked call us at our toll free number listed below.</p>
+            </div>
+
+            <section class="desk-grid-con">
+                <h2 class="hidden">Address, Phone Number and Form</h2>
+                <section id="desk-contact-form-address-left" class="desk-col-start-2 desk-col-end-5">
+                    <h3>Couples Resort (Inc.)</h3>
+                    <p>
+                        1198 Osprey Rd (End of)<br>
+                        Mindin, Soyers Lake, ON<br>
+                        K0M 2K0
+                    </p>
+                    <h3 class="hidden">Phone, Fax and Email</h3>
+                    <p>
+                        Toll Free: +1 866-202-1179<br>
+                        FAX: +1 613-638-2217<br>
+                        E-mail: info[at]coupleresort.com
+                    </p>
+                </section>
+
+                <section id="desk-contact-form-fields-right" class="desk-col-start-6 desk-col-end-12">
+                    <h3 class="hidden">Contact Us Form</h3>
+                    <form action="email.php" method="POST" enctype="text/plain">
+                        <input name="fullName" type="text" required placeholder="First &amp; Last Name">
+                        <input name="contactInfo" type="text" required placeholder="Phone number or Email">
+                        <textarea name="msg" required
+                            placeholder="Enter your questions, comments or concerns here..."></textarea>
+                        <div class="col-span-full">
+                            <input type="checkbox"><span>Sign up for our monthly newsletter</span>
+                        </div>
+                        <input name="submit" type="submit" value="Send">
+                    </form>
+                </section>
+            </section>
+        </main>
+        <!-- Footer -->
+        <footer id="desk-main-footer" class="desk-grid-con">
+            <div id="desk-main-footer-contact-info" class="desk-col-start-2 desk-col-end-5">
+                <h2>Couples Resort <span class="hidden">Address and Contact Info</span></h2>
+                <p>
+                    1198 Osprey Rd (End of)<br>
+                    Mindin, Soyers Lake, ON<br>
+                    K0M 2K0
+                </p>
+                <h3 class="hidden">Phone and Fax Information</h3>
+                <p>
+                    Toll Free: +1 866-202-1179<br>
+                    FAX: +1 613-638-2217
+                </p>
+            </div>
+
+            <nav id="footer-nav">
+                <div class="desk-col-start-5 desk-col-end-6">
+                    <ul class="desk-foot-nav">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="rooms.html">Rooms</a></li>
+                        <li><a href="packages.html">Packages</a></li>
+                        <li><a href="#">Dining</a></li>
+                    </ul>
+                </div>
+
+                <div class="desk-col-start-7 desk-col-end-8">
+                    <ul class="desk-foot-nav">
+                        <li><a href="#">Spa</a></li>
+                        <li><a href="activities.html">Activities</a></li>
+                        <li><a href="#">Reservations</a></li>
+                    </ul>
+                </div>
+            </nav>
+
+            <div class="desk-col-start-9 desk-col-end-12" >
+                <ul>
+                    <li id="desk-foot-book-now"><a href="#">Book Now</a></li>
+                </ul>
+            </div>
+
+            <p id="desk-price-policy" class="desk-col-start-2 desk-col-end-12">All prices and services on this website and in our reservation system are based on conditions at the time of publishing and are subject to change. Please call to confirm services, availability and pricing. &copy;2025 Couples Resort Inc. All Rights Reserved. Privacy Policy.</p>
+        </footer>
+    </div>
 </body>
 </html>
