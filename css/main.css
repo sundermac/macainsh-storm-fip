@@ -588,3 +588,111 @@ input, textarea {
     margin-top: 5px;
     font-size: 12px;
 }
+
+
+/* 14. ---Packages--- */
+#min-deals p:first-of-type {
+    border-top: none;
+    padding-top: 8px;
+}
+
+#min-deals p {
+    border-top: solid 1px #9a2018;
+    padding-top: 8px;
+}
+
+#min-deals ul, #rewards ul {
+    margin-left: 20px;
+}
+
+#min-deals ul li, #rewards ul li {
+    border: none;
+    list-style-type: disc;
+    padding: 5px 0 0 0;
+}
+
+#rewards p:last-of-type {
+    border-top: solid 1px #9a2018;
+    padding-top: 8px;
+}
+
+#package-types {
+    padding-bottom: 20px;
+}
+
+#honeymoon, #wedding, #valentine, #musicians {
+    border-top: solid 3px #9a2018;
+    padding: 15px 0 15px 0;
+}
+
+#honeymoon h3, #wedding h3, #valentine h3, #musicians h3 {
+    padding-bottom: 19px;
+}
+
+#honeymoon img, #valentine img {
+    float: left;
+    margin-right: 15px;
+}
+
+#wedding img, #musicians img {
+    float: right;
+    margin-left: 15px;
+}
+
+#wedding ul, #valentine ul, #honeymoon ul {
+    font-size: 12px;
+    padding-left: 15px;
+}
+
+#honeymoon ul {
+    margin-bottom: 0;
+}
+
+#wedding p, #honeymoon p, #valentine p {
+    font-size: 12px;
+    margin-bottom: 4px;
+}
+
+#musicians p {
+    margin-bottom: 20px;
+    font-size: 12px;
+}
+
+#musicians p:last-of-type {
+    margin-bottom: 5px;
+    font-size: 12px;
+}
+
+.clear {
+    clear: both;
+    padding-top: 10px;
+}
+
+.pack-book-btn {
+    background-color: #9a2018;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+.pack-book-btn:hover {
+    background-color: #5D140F;
+    transition: all .4s ease-in-out;
+}
+
+.pack-learn-btn {
+    margin: 10px;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+.pack-learn-btn:hover {
+    color: #000000;
+    filter: drop-shadow(0 0 1px #6b6b6b);
+    transition: all .3s ease-in-out;
+}
+
+.pack-btns {
+    display: flex;
+    margin-bottom: 15px;
+}
