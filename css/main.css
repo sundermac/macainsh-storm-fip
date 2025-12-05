@@ -696,3 +696,25 @@ input, textarea {
     display: flex;
     margin-bottom: 15px;
 }
+
+
+/* 15. ---Activites--- */
+#algonquin-text {
+    border-top: solid 3px #9a2018;
+    margin-top: 15px;
+    padding-top: 15px;
+}
+
+#algonquin-text p a {
+    font-style: italic;
+    text-decoration: underline;
+}
+
+.faq-items ul#fishing li {
+    list-style-type: disc;
+    margin: 0 0 0 30px;
+    padding: 0 0 5px 0;
+    border: none;
+    font-style: italic;
+    text-decoration: underline;
+}
