@@ -103,3 +103,460 @@ input, textarea {
     margin-top: 15px;
     padding-top: 15px;
 }
+
+
+/* 3. ---Header--- */
+#main-nav label img {
+    border: 0;
+    width: 20px;
+    height: 20px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+#main-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 0px 0;
+}
+
+#main-nav ul li a {
+    display: block;
+    padding: 10px 0 10px 0;
+    display: flex;
+    justify-content: center;
+}
+
+#main-nav ul li {
+    border-bottom: 1px solid #efefef;
+}
+
+#main-nav ul li:last-of-type {
+    border: none;
+}
+
+#burger-con, #main-nav input {
+    display: none;
+}
+
+#main-nav input:checked~#burger-con {
+    display: block;
+}
+
+/* ~ is known as the general sibling combinator, which means select any element that is a sibling and comes after the target element in the DOM */
+#main-nav input:checked~label img {
+    transform: rotate(90deg);
+}
+
+
+/* 4. ---Main Hero Image--- */
+#main-hero {
+    margin-top: 20px;
+}
+
+.hero-book-now {
+    background-color: #9a2018;
+    color: #fff;
+    font-size: 16px;
+    grid-row: 1/2;
+    height: 67px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .5s ease-in-out;
+}
+
+.hero-book-now:hover {
+    box-shadow: inset 0 -120px 0 0 #c41c1c;
+}
+
+.hero-img-h2 {
+    background-color: #fff;
+    padding: 15px 15px;
+    grid-column: 1/-1;
+    align-self: end;
+    font-size: 14px;
+}
+
+.hero-img-h2 span {
+    color: #9a2018;
+    font-size: 12px;
+    line-height: 20px;
+}
+
+#hero-welcome {
+    font-size: 14px;
+    line-height: 22px;
+}
+
+#hero-welcome p:first-of-type {
+    border-top: 3px solid #9a2018;
+    margin-top: 15px;
+    padding-top: 15px;
+}
+
+
+/* 5. ---Accordion Styles--- */
+.accordion-items details {
+    margin-bottom: 11px;
+}
+
+.accordion-items details#accordion-last {
+    margin-bottom: 0;
+}
+
+.accordion-items details#accordion-last-contact {
+    margin-bottom: 20px;
+}
+
+.accordion-items summary {
+    background: #e8e7e7;
+    padding: 10px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.accordion-items ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.accordion-items ul li {
+    padding: 8px 0;
+    border-bottom: 1px solid #9a2018;
+}
+
+.accordion-items ol {
+    margin: 0 0 0 15px;
+    padding: 0;
+}
+
+.accordion-items a {
+    color: inherit;
+    font-size: 13px;
+}
+
+.accordion-items p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.accordion-list-con {
+    margin-top: 10px;
+}
+
+.accordion-link {
+    text-decoration: underline;
+    font-style: italic;
+}
+
+
+/* 6. ---Contact Information--- */
+#contact-info {
+    font-size: 12px;
+    background-color: #efefef;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+#contact-info-con div {
+    display: flex;
+    justify-content: center;
+}
+
+.fas {
+    font-size: 50px;
+    color: #9a2018;
+}
+
+.fa-mobile-alt {
+    margin-right: 13px;
+    margin-bottom: 20px;
+}
+
+.fa-map-marker-alt {
+    margin-right: 10px;
+}
+
+
+/* 7. ---Page Navigation--- */
+#page-nav {
+    padding-top: 20px;
+    padding-bottom: 5px;
+}
+
+#page-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#page-nav ul li {
+    margin-bottom: 15px;
+}
+
+#page-nav ul li a {
+    color: inherit;
+    padding: 5px;
+}
+
+#page-nav ul li a:hover {
+    border-left: solid 5px #9a2018;
+    transition: all .1s ease;
+}
+
+#card-section section:first-of-type {
+    border-top: solid 3px #9a2018;
+    margin-top: 15px;
+    padding-top: 20px;
+}
+
+
+/* 8. ---Cards--- */
+#card-title {
+    margin-bottom: 10px;
+}
+
+.card-img {
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.card-img img {
+    float: left;
+    margin-right: 10px;
+}
+
+.card-img h4 {
+    font-size: 14px;
+    font-weight: normal;
+    margin-bottom: 15px;
+}
+
+.card-img a {
+    color: inherit;
+}
+
+.card-img p {
+    font-size: 12px;
+}
+
+#cards-bottom-nav {
+    background-color: #cf6666;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#cards-bottom-nav ol {
+    list-style-type: none;
+    margin: 0 0 0 0px;
+    padding: 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#cards-bottom-nav ol li {
+    display: inline;
+}
+
+#cards-bottom-nav ol li a {
+    padding: 5px;
+    color: #fff;
+    text-decoration: underline;
+}
+
+
+/* 9. ---About--- */
+#about-text-group1 {
+    border-top: solid 3px #9a2018;
+    margin-top: 15px;
+    padding-top: 15px;
+}
+
+
+/* 10. ---FAQ--- */
+.faq {
+    background-color: #f4f4f4;
+    padding-top: 35px;
+    padding-bottom: 30px;
+}
+
+.faq h2 {
+    font-size: 24px;
+    border-bottom: solid 3px #9a2018;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+
+.faq h2 span {
+    color: #9a2018;
+    font-size: 16px;
+}
+
+.faq-items {
+    margin-bottom: 11px;
+}
+
+.faq-items summary {
+    background: #e8e7e7;
+    padding: 10px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.faq-items p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.faq-items ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.faq-items ul li {
+    padding: 8px 0;
+    border-bottom: 1px solid #9a2018;
+}
+
+.faq-items ol {
+    margin: 0 0 0 15px;
+    padding: 0;
+}
+
+.faq-items ol li {
+    margin: 0 0 0 9px;
+    padding: 5px 0 0 0;
+}
+
+.faq-items a {
+    color: inherit;
+    font-size: 13px;
+}
+
+.faq-list-con {
+    margin-top: 10px;
+}
+
+.faq-link {
+    text-decoration: underline;
+    font-style: italic;
+}
+
+
+/* 11. ---Contact Form--- */
+#contact-form-text p {
+    border-top: solid 3px #9a2018;
+    margin-top: 15px;
+    padding-top: 20px;
+    line-height: 22px;
+    font-size: 14px;
+}
+
+#contact-form-address-left h3 {
+    font-size: 22px;
+    margin-bottom: 20px;
+    font-family: 'ceragr-regularuploaded_file', arial, sans-serif;
+}
+
+#contact-form-address-left p {
+    line-height: 24px;
+}
+
+#contact-form-fields-right form {
+    display: flex;
+    flex-direction: column;
+}
+
+#contact-form-fields-right input, textarea {
+    padding: 14px;
+    border: 2px solid #d6d6d6;
+    background-color: #f7f7f7;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    font: inherit;
+}
+
+#contact-form-fields-right textarea {
+    height: 250px;
+    resize: none;
+}
+
+#contact-form-fields-right input[type="submit"] {
+    padding: 12px 28px;
+    background: #9a2018;
+    color: #fff;
+    border: none;
+    border-radius: 0px;
+    transition: all 200ms ease-in;
+    width: 150px;
+    align-self: flex-end;
+}
+
+#contact-form-fields-right input[type="submit"]:hover {
+    animation: pulsing infinite 1s ease-in-out;
+    background-color: #5D140F;
+    cursor: pointer;
+}
+
+@keyframes pulsing {
+    0% {transform: scale(1);}
+    50% {transform: scale(1.08);}
+    100% {transform: scale(1);}
+}
+
+#contact-form-fields-right input[type="checkbox"] {
+    float: left;
+    margin: 3px 5px 30px 0;
+}
+
+#contact-form-fields-right input[type="checkbox"]:checked + span::after {
+    content: "\1F4F0";
+    padding-left: 4px;
+}
+
+#contact-form-fields-right input[type="checkbox"]:checked + span {
+    color: #076643;
+}
+
+#contact-form-fields-right {
+    accent-color: #076643;
+}
+
+
+/* 12. ---Footer--- */
+#main-footer {
+    background-image: url(../images/mobile-footer.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    font-size: 12px;
+    padding-bottom: 80px;
+}
+
+#main-footer-contact-info h2 {
+    font-size: 28px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-family: 'ceragr-regularuploaded_file', arial, sans-serif;
+}
+
+#main-footer-contact-info p {
+    line-height: 22px;
+}
+
+#main-footer nav {
+    display: none;
+}
+
+#price-policy {
+    border-top: solid 3px #9a2018;
+    margin-top: 15px;
+    padding-top: 30px;
+    line-height: 22px;
+}
