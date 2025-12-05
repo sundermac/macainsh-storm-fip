@@ -1,0 +1,105 @@
+/* 
+
+    CSS Guide
+    
+    1. Web Fonts
+    2. General Styles
+    3. Header
+    4. Main Hero Image
+    5. Accordion Styles
+    6. Contact Information
+    7. Page Navigation
+    8. Cards
+    9. About
+    10. FAQ
+    11. Contact Form
+    12. Footer
+    13. Rooms
+    14. Packages
+    15. Activities
+    16. Desktop
+
+*/
+
+
+/* 1. --- Web Fonts --- */
+@font-face {
+    font-family: 'ceragr-regularuploaded_file';
+    src: url('../fonts/cera-gr-webfont.woff2') format('woff2'),
+        url('../fonts/cera-gr-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ceragr-mediumuploaded_file';
+    src: url('../fonts/cera-gr-medium-webfont.woff2') format('woff2'),
+        url('../fonts/cera-gr-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* 2. ---General Styles--- */
+#mobile-outline {
+    outline: 20px solid #333;
+    width: 412px;
+    margin: 20px auto 20px auto;
+    border-radius: 10px;
+    
+}
+
+#desk-outline {
+    width: 1200px;
+    margin: 20px auto 20px auto;
+    border-radius: 10px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    color: #505050;
+    font-family: "Sanchez", "Times New Roman", Times, serif;
+    font-size: 14px;
+}
+
+#desk-body {
+    color: #505050;
+    font-family: "Sanchez", "Times New Roman", Times, serif;
+    font-size: 18px;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #505050
+}
+
+input, textarea {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+.cr-red {
+    color: #9a2018;
+}
+
+.img-overlap {
+    grid-row: 1/1;
+}
+
+.last-p {
+    margin-bottom: 20px;
+}
+
+.line {
+    border-top: 3px solid #9a2018;
+    margin-top: 15px;
+    padding-top: 15px;
+}
