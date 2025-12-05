@@ -560,3 +560,31 @@ input, textarea {
     padding-top: 30px;
     line-height: 22px;
 }
+
+
+/* 13. ---Rooms--- */
+#room-card h3 {
+    display: inline-block;
+    border-bottom: solid 1px #9a2018;
+    font-size: 15px;
+}
+
+#room-card-styles {
+    list-style-type: none;
+    font-size: 12px;
+}
+
+#room-card h4 {
+    clear: left;
+    padding: 10px 0 0 0;
+    margin-bottom: 0;
+    font-size: 12px;
+}
+
+#room-card-features {
+    clear: left;
+    font-size: 13px;
+    padding: 0 0 0 20px;
+    margin-top: 5px;
+    font-size: 12px;
+}
