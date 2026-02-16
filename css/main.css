@@ -1,0 +1,41 @@
+/* 
+CSS Guide
+1. General Styles
+2. Main Nav
+3. Custom Queries
+4. Tablet Queries
+5. Desktop Queries
+*/
+
+/* 1. --General Styles-- */
+
+/* 2. --Main Nav-- */
+
+#main-nav {
+    display: none;
+}
+
+#main-nav.slide-toggle {
+    display: block;
+}
+
+#burger-btn {
+    cursor: pointer;
+    align-self: center;
+}
+
+#main-nav ul {
+    list-style-type: none;
+}
+
+#main-nav ul li {
+    text-align: center
+}
+
+#main-nav ul li a {
+    text-decoration: none;
+    color: #2A4776;
+    font-size: 20px;
+    line-height: 35px;
+    justify-self: center;
+}
