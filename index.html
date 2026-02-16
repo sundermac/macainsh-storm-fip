@@ -5,30 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/grid.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://use.typekit.net/biw6jax.css">
+
     <title>Orbitz - Home</title>
 </head>
 <body>
     <h1 class="visually-hidden">Orbitz - Home</h1>
 
     <!-- Header -->
-    <header class="grid-con center-grid-con">            
-            
-        <div id="burger-btn" class="col-span-1">
-                <img src="images/icon-burger.svg" alt="Hamburger Menu">
-        </div>
-            
-        <nav id="main-nav" class="col-span-full">
-            <h2 class="visually-hidden">Main Navigation</h2>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Products</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-
+    <div class="light-blue">
+        <header class="grid-con center-grid-con">            
         
+            <div id="burger-btn" class="col-span-1">
+                    <img src="images/icon-burger.svg" alt="Hamburger Menu">
+            </div>
+
+            <div id="logo-head" class="col-start-2 col-end-4 m-col-span-3">
+                <img src="images/orbitz-logo.svg" alt="Orbitz Logo">
+            </div>
+
+            <div id="header-icons" class="col-span-1 m-col-start-11 m-col-end-13">
+                <img id="search" src="images/icon-header-search.svg" alt="Search Icon">
+                <img id="cart" src="images/icon-header-cart.svg" alt="Shopping Cart Icon">
+            </div>    
+                
+            <nav id="main-nav" class="col-span-full m-col-start-4 m-col-end-11">
+                <h2 class="visually-hidden">Main Navigation</h2>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
     
     <script src="js/main.js"></script>
 </body>

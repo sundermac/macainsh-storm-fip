@@ -8,6 +8,7 @@ const navMenu = document.querySelector("#main-nav");
 
 // Hamburger Menu
 function hamburgerMenu() {
+    burgerBtn.classList.toggle("rotate");
 	navMenu.classList.toggle("slide-toggle");
 }
 
