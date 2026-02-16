@@ -2,17 +2,23 @@
 CSS Guide
 1. General Styles
 2. Main Nav
-3. Custom Queries
-4. Tablet Queries
-5. Desktop Queries
+3. Header
+4. Custom Queries
+5. Tablet Queries
+6. Desktop Queries
 */
 
 /* 1. --General Styles-- */
+
+.light-blue {
+    background-color: #80BDDF;
+}
 
 /* 2. --Main Nav-- */
 
 #main-nav {
     display: none;
+    font-family: josefin-sans, sans-serif;
 }
 
 #main-nav.slide-toggle {
@@ -24,18 +30,91 @@ CSS Guide
     align-self: center;
 }
 
+#burger-btn.rotate {
+    position: fixed;
+    align-self: auto;
+    transform: rotate(90deg);
+}
+
 #main-nav ul {
     list-style-type: none;
 }
 
 #main-nav ul li {
-    text-align: center
+    text-align: center;
 }
 
 #main-nav ul li a {
     text-decoration: none;
     color: #2A4776;
-    font-size: 20px;
-    line-height: 35px;
+    font-size: 25px;
+    line-height: 55px;
     justify-self: center;
+}
+
+/* 2. --Header-- */
+
+header {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#logo-head {
+    justify-self: center;
+}
+
+#header-icons {
+    justify-self: end;
+    align-self: center;
+}
+
+#search {
+    margin-right: 20px;
+    width: 35px;
+    cursor: pointer;
+}
+
+#cart {
+    width: 35px;
+    cursor: pointer;
+}
+
+/* 5. --Tablet Queries-- */
+
+@media screen and (min-width: 768px) {
+    #logo-head {
+        order: -2;
+        align-self: center;
+        justify-self: normal;
+    }
+
+    #logo-head img {
+        width: 100%;
+    }
+
+    #burger-btn {
+        display: none;
+    }
+
+    #main-nav {
+        display: block;
+        order: -1;
+    }
+
+    #main-nav ul {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #main-nav ul li a {
+        font-size: 22px;
+    }
+}
+
+/* 5. --Desktop Queries-- */
+
+@media screen and (min-width: 1200px) {
+    #main-nav ul li a {
+        font-size: 25px;
+    }
 }
