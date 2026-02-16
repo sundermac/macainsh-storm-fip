@@ -1,0 +1,176 @@
+/* 
+CSS Guide
+1. General Styles
+2. Main Nav
+3. Header
+8. Footer
+9. Custom Queries
+10. Tablet Queries
+11. Desktop Queries
+*/
+
+/* 1. --General Styles-- */
+
+.light-blue {
+    background-color: #80BDDF;
+}
+
+/* 2. --Main Nav-- */
+
+#main-nav {
+    display: none;
+}
+
+#main-nav.slide-toggle {
+    display: block;
+}
+
+#main-menu-btn {
+    cursor: pointer;
+    align-self: center;
+}
+
+#main-nav ul {
+    list-style-type: none;
+}
+
+#main-nav ul li {
+    text-align: center
+}
+
+#main-nav ul li a {
+    text-decoration: none;
+    color: #2A4776;
+    font-size: 20px;
+    line-height: 35px;
+    justify-self: center;
+}
+
+/* 3. --Header-- */
+
+header {
+    background-color: #80BDDF;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#logo-head {
+    justify-self: center; 
+}
+
+#header-icons {
+    justify-self: end;
+    align-self: center;
+}
+
+#search {
+    margin-right: 10px;
+    width: 30px;
+    cursor: pointer;
+}
+
+#cart {
+    width: 30px;
+    cursor: pointer;
+}
+
+/* 8. --Footer-- */
+
+footer {
+    background-color: #80BDDF;
+}
+
+#logo-foot {
+    padding-top: 23px;
+    justify-self: center;
+    margin-bottom: 10px;
+}
+
+.m-l-foot-nav {
+    display: none;
+}
+
+#socials {
+    justify-self: center;
+    margin-bottom: 10px;
+}
+
+#facebook {
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+#instagram {
+    cursor: pointer;
+}
+
+#copy {
+    text-align: center;
+    color: #2A4776;
+    padding-bottom: 23px;
+}
+
+/* 10. --Tablet Queries--  */
+
+/* --Header-- */
+@media screen and (min-width: 768px) {
+    #logo-head {
+        order: -2;
+        align-self: center;
+    }
+
+    #main-menu-btn {
+        display: none;
+    }
+
+    #main-nav {
+        display: block;
+        order: -1;
+    }
+
+    #main-nav ul {
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+/* --Footer-- */
+@media screen and (min-width: 768px) {
+    #logo-foot {
+        width: 400px;
+        justify-self: normal;
+        align-self: center;
+    }
+
+    .m-l-foot-nav {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        width: max-content;
+        font-size: 19px;        
+        line-height: 45px;
+        list-style-type: none;
+    }
+
+    .m-l-foot-nav li {
+        justify-content: center;
+    }
+
+
+    .m-l-foot-nav li a {
+        color: #2A4776;
+        text-decoration: none;
+    }
+
+    #follow-us {
+        display: flex;
+        color: #2A4776;
+        padding-bottom: 50px;
+        text-align: center;
+    }
+
+    #socials {
+        align-self: center;
+    }
+    
+}
