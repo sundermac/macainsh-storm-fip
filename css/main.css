@@ -3,9 +3,10 @@ CSS Guide
 1. General Styles
 2. Main Nav
 3. Header
-4. Custom Queries
-5. Tablet Queries
-6. Desktop Queries
+4. Footer
+5. Custom Queries
+6. Tablet Queries
+7. Desktop Queries
 */
 
 /* 1. --General Styles-- */
@@ -19,6 +20,7 @@ CSS Guide
 #main-nav {
     display: none;
     font-family: josefin-sans, sans-serif;
+    font-weight: 400;
 }
 
 #main-nav.slide-toggle {
@@ -52,7 +54,7 @@ CSS Guide
     justify-self: center;
 }
 
-/* 2. --Header-- */
+/* 3. --Header-- */
 
 header {
     padding-top: 20px;
@@ -79,8 +81,52 @@ header {
     cursor: pointer;
 }
 
-/* 5. --Tablet Queries-- */
+/* 4. --Footer-- */
 
+#logo-foot {
+    padding-top: 23px;
+    justify-self: center;
+    margin-bottom: 10px;
+}
+
+.m-l-foot-nav ul {
+    display: none;
+}
+
+#socials {
+    justify-self: center;
+    margin-bottom: 10px;
+}
+
+#facebook {
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+#instagram {
+    cursor: pointer;
+}
+
+#follow-us {
+    display: none;
+}
+
+#copy {
+    text-align: center;
+    padding-bottom: 23px;
+    font-family: josefin-sans, sans-serif;
+    font-weight: 400;
+    color: #2A4776;
+}
+
+#m-l-copy {
+    display: none;
+}
+
+
+/* 6. --Tablet Queries-- */
+
+/* Header */
 @media screen and (min-width: 768px) {
     #logo-head {
         order: -2;
@@ -111,8 +157,67 @@ header {
     }
 }
 
-/* 5. --Desktop Queries-- */
+/* Footer */
+@media screen and (min-width: 768px) {
+    #logo-foot {
+        justify-self: normal;
+        align-self: center;
+    }
 
+    #logo-foot img {
+        width: 100%;
+    }
+
+    #m-l-copy {
+        display: block;
+        text-align: center;
+        font-family: josefin-sans, sans-serif;
+        font-weight: 400;
+        color: #2A4776;
+    }
+
+    #copy {
+        display: none;
+    }
+
+    .m-l-foot-nav ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 20px;        
+        line-height: 45px;
+        list-style-type: none;
+        width: 100%;
+        padding: 0px;
+        font-family: josefin-sans, sans-serif;
+        font-weight: 400;
+    }
+
+    .m-l-foot-nav li {
+        justify-content: center;
+    }
+
+
+    .m-l-foot-nav li a {
+        color: #2A4776;
+        text-decoration: none;
+    }
+
+    #follow-us {
+        display: block;
+        margin-left: 5px;
+        margin-top: 23px;
+        margin-bottom: 40px;
+        font-family: josefin-sans, sans-serif;
+        font-weight: 400;
+        color: #2A4776;
+    }
+}
+
+/* 7. --Desktop Queries-- */
+
+/* Header */
 @media screen and (min-width: 1200px) {
     #main-nav ul li a {
         font-size: 25px;
