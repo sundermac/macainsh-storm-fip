@@ -104,6 +104,39 @@ header {
     display: none;
 }
 
+.product-card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+    padding: 12px;
+    border-radius: 18px;
+    margin-bottom: 50px;
+}
+
+.product-card h3 {
+    font-size: 30px;
+    font-family: "ohno-softie-variable",sans-serif;
+    margin-bottom: 10px;
+}
+
+.product-text {
+    font-size: 16px;
+    text-align: left;
+    margin-bottom: 10px;
+    font-family: josefin-sans, sans-serif;
+    font-weight: 200;
+}
+
+.button-v1 {
+    background-color: #2A4776;
+    color: #fff;
+    padding: 15px;
+    font-size: 20px;
+    font-family: josefin-sans, sans-serif;
+    font-weight: 400;
+    border-radius: 50px;
+    text-align: center;
+    cursor: pointer;
+}
+
 /* 4. --Footer-- */
 
 #logo-foot {
