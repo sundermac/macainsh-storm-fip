@@ -15,6 +15,20 @@ CSS Guide
     background-color: #80BDDF;
 }
 
+h2 {
+    font-family: "ohno-softie-variable",sans-serif;
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+p {
+    font-family: josefin-sans, sans-serif;
+    font-weight: 200;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
 /* 2. --Main Nav-- */
 
 #main-nav {
@@ -79,6 +93,15 @@ header {
 #cart {
     width: 35px;
     cursor: pointer;
+}
+
+/* --Products-- */
+#product3 {
+    display: none;
+}
+
+#product4 {
+    display: none;
 }
 
 /* 4. --Footer-- */
@@ -157,6 +180,24 @@ header {
     }
 }
 
+/* What's New */
+@media screen and (min-width: 768px) {
+    #whats-new h2 {
+            order: -2;
+        }
+    
+    #whats-new p {
+        order: -1;
+    }
+}
+
+/* Products */
+@media screen and (min-width: 768px) {
+    #product3 {
+        display: block;
+    }
+}
+
 /* Footer */
 @media screen and (min-width: 768px) {
     #logo-foot {
@@ -209,6 +250,7 @@ header {
         margin-left: 5px;
         margin-top: 23px;
         margin-bottom: 40px;
+        font-size: 25px;
         font-family: josefin-sans, sans-serif;
         font-weight: 400;
         color: #2A4776;
@@ -221,5 +263,12 @@ header {
 @media screen and (min-width: 1200px) {
     #main-nav ul li a {
         font-size: 25px;
+    }
+}
+
+/* Produts */
+@media screen and (min-width: 1200px) {
+    #product4 {
+        display: block;
     }
 }
