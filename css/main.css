@@ -3,16 +3,18 @@ CSS Guide
 1. General Styles
 2. Main Nav
 3. Header
-4. Footer
-5. Custom Queries
-6. Tablet Queries
-7. Desktop Queries
+4. Products
+5. Find Us
+6. Footer
+7. Custom Queries
+8. Tablet Queries
+9. Desktop Queries
 */
 
 /* 1. --General Styles-- */
 
-.light-blue {
-    background-color: #80BDDF;
+body {
+    background-color: #edf3f7;
 }
 
 h2 {
@@ -20,6 +22,7 @@ h2 {
     font-size: 40px;
     text-align: center;
     margin-bottom: 10px;
+    color: #2A4776;
 }
 
 p {
@@ -27,6 +30,18 @@ p {
     font-weight: 200;
     font-size: 18px;
     margin-bottom: 20px;
+}
+
+.light-blue {
+    background-color: #80BDDF;
+}
+
+.light-blue-section {
+    background-color: #80BDDF;
+    padding-top: 43px;
+    padding-bottom: 43px;
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
 
 /* 2. --Main Nav-- */
@@ -95,7 +110,7 @@ header {
     cursor: pointer;
 }
 
-/* --Products-- */
+/* 4. --Products-- */
 #product3 {
     display: none;
 }
@@ -125,19 +140,12 @@ header {
     font-weight: 200;
 }
 
-.button-v1 {
-    background-color: #2A4776;
-    color: #fff;
-    padding: 15px;
-    font-size: 20px;
-    font-family: josefin-sans, sans-serif;
-    font-weight: 400;
-    border-radius: 50px;
-    text-align: center;
-    cursor: pointer;
+/* 5. --Find Us-- */
+#find-us {
+    margin-bottom: 40px;
 }
 
-/* 4. --Footer-- */
+/* 6. --Footer-- */
 
 #logo-foot {
     padding-top: 23px;
@@ -180,7 +188,7 @@ header {
 }
 
 
-/* 6. --Tablet Queries-- */
+/* 7. --Tablet Queries-- */
 
 /* Header */
 @media screen and (min-width: 768px) {
@@ -219,7 +227,7 @@ header {
             order: -2;
         }
     
-    #whats-new p {
+    #whats-new-content {
         order: -1;
     }
 }
@@ -290,7 +298,7 @@ header {
     }
 }
 
-/* 7. --Desktop Queries-- */
+/* 8. --Desktop Queries-- */
 
 /* Header */
 @media screen and (min-width: 1200px) {
