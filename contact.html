@@ -5,10 +5,124 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/grid.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://use.typekit.net/biw6jax.css">
     <title>Orbitz - Contact</title>
 </head>
 <body>
+    <h1 class="visually-hidden">Orbiz Contact Page</h1>
     
+    <!-- Header -->
+    <div class="light-blue">
+        <header class="grid-con center-grid-con">
+
+            <div id="burger-btn" class="col-span-1">
+                <img src="images/icon-burger.svg" alt="Hamburger Menu">
+            </div>
+
+            <div id="logo-head" class="col-start-2 col-end-4 m-col-span-3">
+                <img src="images/orbitz-logo.svg" alt="Orbitz Logo">
+            </div>
+
+            <div id="header-icons" class="col-span-1 m-col-start-11 m-col-end-13">
+                <img id="search" src="images/icon-header-search.svg" alt="Search Icon">
+                <img id="cart" src="images/icon-header-cart.svg" alt="Shopping Cart Icon">
+            </div>
+
+            <nav id="main-nav" class="col-span-full m-col-start-4 m-col-end-11">
+                <h2 class="visually-hidden">Main Navigation</h2>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+
+    <!-- Hero -->
+    <div class="grid-con center-grid-con">
+        <div class="box col-span-full">Hero</div>
+    </div>
+
+    <!-- Contact Us -->
+    <section id="whats-new" class="grid-con center-grid-con">
+        <div class="col-span-full">
+            <h2 class="col-span-full">Contact Us</h2>
+            <p>Do you need a little bit of help, or do you have a recommendation to share? We love listening to your thoughts and we like to make things as easy as possible. Just write your message in the form below. We will read it and answer as soon as possible.</p>
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section class="grid-con center-grid-con">
+        <h3 class="visually-hidden">Contact Us Form</h3>
+        <div id="contact-form" class="col-span-full">
+            <form action="email.php" method="POST" enctype="text/plain">
+                <!-- Name -->
+                <label for="fullName">First &amp; Last Name</label>
+                <input name="fullName" type="text" placeholder="John Doe" required>
+
+                <!-- Email -->
+                <label for="email">Email Address</label>
+                <input name="email" type="email" placeholder="john.doe@gmail.com" required>
+
+                <!-- Subject -->
+                <label for="subject">Subject</label>
+                <input name="subject" type="text" placeholder="Question about [Product/Service]" required>
+
+                <!-- Message -->
+                <label for="msg">Questions, concerns, or feedback</label>
+                <textarea name="msg" placeholder="I am writing to ask about..." required></textarea>
+                
+                <!-- Submit Button -->
+                <input name="submit" type="submit">
+            </form>
+        </div>
+    </section>
+
+    <!-- Find Us in Stores -->
+    <section id="find-us" class="grid-con center-grid-con">
+        <h2 class="col-span-full">Find Us in Stores</h2>
+        <div class="box col-span-full m-col-span-6 l-col-span-3">Location</div>
+        <div class="box col-span-full m-col-span-6 l-col-span-3">Location</div>
+        <div class="box col-span-full m-col-span-6 l-col-span-3">Location</div>
+        <div class="box col-span-full m-col-span-6 l-col-span-3">Location</div>
+    </section>
+
+    <!-- Footer -->
+    <div class="light-blue">
+        <footer class="grid-con center-grid-con">
+            <div id="logo-foot" class="col-start-2 col-end-4 m-col-start-1 m-col-end-4">
+                <img src="images/orbitz-logo.svg" alt="Orbitz Logo">
+                <p id="m-l-copy" class="col-span-full">&copy; Orbitz 2026</p>
+            </div>
+            
+            <nav class="m-l-foot-nav m-col-start-4 m-col-end-7">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+
+            <nav class="m-l-foot-nav m-col-start-7 m-col-end-10">
+                <ul>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Use</a></li>
+                    <li><a href="#">Refund Policy</a></li>
+                </ul>
+            </nav>
+
+            <div id="socials" class="col-start-2 col-end-4 m-col-start-10 m-col-end-13">
+                <h2 id="follow-us">Follow Us</h2>
+                <img id="facebook" src="images/icon-social-face.svg" alt="Facebook Icon">
+                <img id="instagram" src="images/icon-social-insta.svg" alt="Instagram Icon">
+            </div>
+
+            <p id="copy" class="col-span-full">&copy; Orbitz 2026</p>
+        </footer>
     <script src="js/main.js"></script>
 </body>
 </html>
