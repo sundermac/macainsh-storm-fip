@@ -141,8 +141,15 @@ header {
 }
 
 /* 5. --Find Us-- */
-#find-us {
-    margin-bottom: 40px;
+
+#find-us h2 {
+    margin-bottom: 38px;
+}
+
+.find-us-logos {
+    margin-bottom: 75px;
+    display: flex;
+    justify-content: center;
 }
 
 /* 6. --Footer-- */
