@@ -3,14 +3,15 @@ CSS Guide
 1. General Styles
 2. Main Nav
 3. Header
-4. Buttons
-5. Products Display
-6. Product Cards
-7. Contact Form
-8. Find Us
-9. Footer
-10. Tablet Queries
-11. Desktop Queries
+4. Hero Images
+5. Buttons
+6. Products Display
+7. Product Cards
+8. Contact Form
+9. Find Us
+10. Footer
+11. Tablet Queries
+12. Desktop Queries
 */
 
 
@@ -112,7 +113,15 @@ header {
 }
 
 
-/* 4. --Buttons-- */
+
+/* 4. --Hero Images-- */
+#contact-hero {
+    margin-bottom: 39px;
+}
+
+
+
+/* 5. --Buttons-- */
 .yellow-btn {
     color: #2A4776;
     background-color: #E5D28C;
@@ -135,7 +144,7 @@ header {
 
 
 
-/* 5. --Products Display-- */
+/* 6. --Products Display-- */
 #product3 {
     display: none;
 }
@@ -146,7 +155,7 @@ header {
 
 
 
-/* 6. --Product Cards-- */
+/* 7. --Product Cards-- */
 .product-card {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
     padding: 12px;
@@ -170,7 +179,7 @@ header {
 
 
 
-/* 7. --Contact Form-- */
+/* 8. --Contact Form-- */
 #contact-form-con {
     display: flex;
     justify-content: center;
@@ -223,7 +232,7 @@ header {
 }
 
 
-/* 8. --Find Us-- */
+/* 9. --Find Us-- */
 #find-us h2 {
     margin-bottom: 38px;
 }
@@ -236,7 +245,7 @@ header {
 
 
 
-/* 9. --Footer-- */
+/* 10. --Footer-- */
 #logo-foot {
     padding-top: 23px;
     justify-self: center;
@@ -279,7 +288,7 @@ header {
 
 
 
-/* 10. --Tablet Queries-- */
+/* 11. --Tablet Queries-- */
 @media screen and (min-width: 768px) {
     
     /* Header */
@@ -311,6 +320,10 @@ header {
         font-size: 22px;
     }
 
+    /* Contact Hero */
+    #contact-hero img {
+        height: 475px;
+    }
 
     /* Whats New */
     #whats-new h2 {
@@ -417,13 +430,19 @@ header {
 
 
 
-/* 11. --Desktop Queries-- */
+/* 12. --Desktop Queries-- */
 @media screen and (min-width: 1200px) {
 
     /* Header */
     #main-nav ul li a {
         font-size: 25px;
-    }    
+    }
+
+    
+    /* Contact Hero */
+    #contact-hero img {
+        height: 740px;
+    }
     
 
     /* Product Display */
