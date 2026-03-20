@@ -3,20 +3,17 @@ CSS Guide
 1. General Styles
 2. Main Nav
 3. Header
-4. Products
-5. Find Us
-6. Footer
-7. Custom Queries
+4. Products Display
+5. Product Cards
+6. Find Us
+7. Footer
 8. Tablet Queries
 9. Desktop Queries
 */
 
+
+
 /* 1. --General Styles-- */
-
-body {
-    background-color: #edf3f7;
-}
-
 h2 {
     font-family: "ohno-softie-variable",sans-serif;
     font-size: 40px;
@@ -37,15 +34,16 @@ p {
 }
 
 .light-blue-section {
-    background-color: #80BDDF;
+    background-color: #98CBE7;
     padding-top: 43px;
     padding-bottom: 43px;
     margin-top: 40px;
     margin-bottom: 40px;
 }
 
-/* 2. --Main Nav-- */
 
+
+/* 2. --Main Nav-- */
 #main-nav {
     display: none;
     font-family: josefin-sans, sans-serif;
@@ -83,8 +81,9 @@ p {
     justify-self: center;
 }
 
-/* 3. --Header-- */
 
+
+/* 3. --Header-- */
 header {
     padding-top: 20px;
     padding-bottom: 20px;
@@ -110,7 +109,9 @@ header {
     cursor: pointer;
 }
 
-/* 4. --Products-- */
+
+
+/* 4. --Products Display-- */
 #product3 {
     display: none;
 }
@@ -119,6 +120,8 @@ header {
     display: none;
 }
 
+
+/* 5. --Product Cards-- */
 .product-card {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
     padding: 12px;
@@ -140,8 +143,9 @@ header {
     font-weight: 200;
 }
 
-/* 5. --Find Us-- */
 
+
+/* 6. --Find Us-- */
 #find-us h2 {
     margin-bottom: 38px;
 }
@@ -152,8 +156,9 @@ header {
     justify-content: center;
 }
 
-/* 6. --Footer-- */
 
+
+/* 7. --Footer-- */
 #logo-foot {
     padding-top: 23px;
     justify-self: center;
@@ -182,7 +187,7 @@ header {
     display: none;
 }
 
-#copy {
+#copy-foot {
     text-align: center;
     padding-bottom: 23px;
     font-family: josefin-sans, sans-serif;
@@ -190,15 +195,16 @@ header {
     color: #2A4776;
 }
 
-#m-l-copy {
+#m-l-copy-foot {
     display: none;
 }
 
 
-/* 7. --Tablet Queries-- */
 
-/* Header */
+/* 8. --Tablet Queries-- */
 @media screen and (min-width: 768px) {
+    
+    /* Header */
     #logo-head {
         order: -2;
         align-self: center;
@@ -226,10 +232,9 @@ header {
     #main-nav ul li a {
         font-size: 22px;
     }
-}
 
-/* What's New */
-@media screen and (min-width: 768px) {
+
+    /* Whats New */
     #whats-new h2 {
             order: -2;
         }
@@ -237,17 +242,15 @@ header {
     #whats-new-content {
         order: -1;
     }
-}
 
-/* Products */
-@media screen and (min-width: 768px) {
+
+    /* Product Display */    
     #product3 {
         display: block;
-    }
-}
+    }    
+    
 
-/* Footer */
-@media screen and (min-width: 768px) {
+    /* Footer */
     #logo-foot {
         justify-self: normal;
         align-self: center;
@@ -257,7 +260,7 @@ header {
         width: 100%;
     }
 
-    #m-l-copy {
+    #m-l-copy-foot {
         display: block;
         text-align: center;
         font-family: josefin-sans, sans-serif;
@@ -265,7 +268,7 @@ header {
         color: #2A4776;
     }
 
-    #copy {
+    #copy-foot {
         display: none;
     }
 
@@ -305,17 +308,18 @@ header {
     }
 }
 
-/* 8. --Desktop Queries-- */
 
-/* Header */
+
+/* 9. --Desktop Queries-- */
 @media screen and (min-width: 1200px) {
+
+    /* Header */
     #main-nav ul li a {
         font-size: 25px;
-    }
-}
+    }    
+    
 
-/* Produts */
-@media screen and (min-width: 1200px) {
+    /* Product Display */
     #product4 {
         display: block;
     }
