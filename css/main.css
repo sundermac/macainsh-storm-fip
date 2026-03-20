@@ -320,10 +320,12 @@ header {
         font-size: 22px;
     }
 
-    /* Contact Hero */
+
+    /* Hero Images */
     #contact-hero img {
         height: 475px;
     }
+
 
     /* Whats New */
     #whats-new h2 {
@@ -439,7 +441,7 @@ header {
     }
 
     
-    /* Contact Hero */
+    /* Hero Images */
     #contact-hero img {
         height: 740px;
     }
