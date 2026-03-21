@@ -183,6 +183,7 @@ header {
 #contact-form-con {
     display: flex;
     justify-content: center;
+    margin-top: 30px;
 }
 
 #contact-form input, textarea {
