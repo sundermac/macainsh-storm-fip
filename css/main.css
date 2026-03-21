@@ -145,6 +145,10 @@ header {
 
 
 /* 6. --Products Display-- */
+#product2 {
+    display: none;
+}
+
 #product3 {
     display: none;
 }
@@ -339,6 +343,10 @@ header {
 
 
     /* Product Display */    
+    #product2 {
+        display: block;
+    }
+    
     #product3 {
         display: block;
     }
