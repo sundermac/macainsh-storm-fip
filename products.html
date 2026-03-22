@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,9 +9,10 @@
     <link rel="stylesheet" href="https://use.typekit.net/biw6jax.css">
     <title>Orbitz - Products</title>
 </head>
+
 <body>
     <h1 class="visually-hidden">Orbiz Products Page</h1>
-    
+
     <!-- Header -->
     <div class="light-blue">
         <header class="grid-con center-grid-con">
@@ -41,16 +43,39 @@
     </div>
 
     <!-- Hero -->
-    <div class="grid-con center-grid-con">
-        <div class="box col-span-full">
-            Hero
-        </div>
+    <div class="full-width-grid-con">
+        <img sizes="100vw" 
+        srcset="
+         images/products-hero_scale,w_412.png 412w,
+         images/products-hero_scale,w_739.png 739w,
+         images/products-hero_scale,w_999.png 999w,
+         images/products-hero_scale,w_1238.png 1238w,
+         images/products-hero_scale,w_1451.png 1451w,
+         images/products-hero_scale,w_1729.png 1729w,
+         images/products-hero_scale,w_1920.png 1920w" 
+        src=" images/products-hero_scale,w_1920.png" 
+        alt=""
+        id="products-hero"
+        class="col-span-full">
+
+        <!-- Nested Grid Text -->
+        <section id="nested-hero-grid" class="grid-con">
+            <div id="right" class="col-span-full">
+                    <h2>Daily Refreshments</h2>
+                    <p>Check out our current deals and special offers!</p>
+                    <div id="nested-yellow-btn">
+                        <a href="#" >View Offers</a>
+                    </div>
+            </div>
+        </section>
     </div>
 
     <!-- Product Store -->
     <section class="grid-con center-grid-con">
         <h2 class="col-span-full">Our Products</h2>
-        <p class="col-span-full">You need a drink that moves as fast as you do. We built this lineup with bright colours and huge flavours for kids who never want to stop. Do not settle for boring when you can have a rush of fun. Find the exact bottle below to power up your day.</p>
+        <p class="col-span-full">You need a drink that moves as fast as you do. We built this lineup with bright colours
+            and huge flavours for kids who never want to stop. Do not settle for boring when you can have a rush of fun.
+            Find the exact bottle below to power up your day.</p>
 
         <div class="product-card col-span-full m-col-span-6 l-col-span-4">
             <div class="box">Image</div>
@@ -97,7 +122,11 @@
     <div class="light-blue-section">
         <section class="grid-con center-grid-con">
             <h2 class="col-span-full">Multi-Pack Offer</h2>
-            <p class="col-span-full m-col-start-2 m-col-end-12">Big days need more than just one drink to keep you moving. That is why we let you grab any three bottles to build your ultimate pack. You can mix our grape, our orange, and our watermelon all at once. If you only want grape, you can easily stack three of them in your box instead. You make all the fun rules right here. Pick the three flavours you want the most and we will send them right to you.</p>
+            <p class="col-span-full m-col-start-2 m-col-end-12">Big days need more than just one drink to keep you
+                moving. That is why we let you grab any three bottles to build your ultimate pack. You can mix our
+                grape, our orange, and our watermelon all at once. If you only want grape, you can easily stack three of
+                them in your box instead. You make all the fun rules right here. Pick the three flavours you want the
+                most and we will send them right to you.</p>
             <div class="yellow-btn col-span-full m-col-start-4 m-col-end-10">Pick Flavours</div>
         </section>
     </div>
@@ -107,22 +136,26 @@
         <h2 class="col-span-full">Find Us in Stores</h2>
         <!-- Costco -->
         <div class="col-span-full m-col-span-6 l-col-span-3">
-            <a href="https://www.costco.ca/" target="_blank" class="find-us-logos"><img src="images/logo-costco.svg" alt="Costco logo"></a>
+            <a href="https://www.costco.ca/" target="_blank" class="find-us-logos"><img src="images/logo-costco.svg"
+                    alt="Costco logo"></a>
         </div>
 
         <!-- Zehrs -->
         <div class="col-span-full m-col-span-6 l-col-span-3">
-            <a href="https://www.zehrs.ca/en" target="_blank" class="find-us-logos"><img src="images/logo-zehrs.svg" alt="Zehrs logo"></a>
+            <a href="https://www.zehrs.ca/en" target="_blank" class="find-us-logos"><img src="images/logo-zehrs.svg"
+                    alt="Zehrs logo"></a>
         </div>
 
         <!-- Sobeys -->
         <div class="col-span-full m-col-span-6 l-col-span-3">
-            <a href="https://www.sobeys.com/" target="_blank" class="find-us-logos"><img src="images/logo-sobeys.svg" alt="Sobeys logo"></a>
+            <a href="https://www.sobeys.com/" target="_blank" class="find-us-logos"><img src="images/logo-sobeys.svg"
+                    alt="Sobeys logo"></a>
         </div>
 
         <!-- Real Canadian Superstore -->
         <div class="col-span-full m-col-span-6 l-col-span-3">
-            <a href="https://www.realcanadiansuperstore.ca/en" target="_blank" class="find-us-logos"><img src="images/logo-superstore.svg" alt="Real Canadian Superstore logo"></a>
+            <a href="https://www.realcanadiansuperstore.ca/en" target="_blank" class="find-us-logos"><img
+                    src="images/logo-superstore.svg" alt="Real Canadian Superstore logo"></a>
         </div>
     </section>
 
@@ -164,4 +197,5 @@
 
     <script src="js/main.js"></script>
 </body>
+
 </html>
