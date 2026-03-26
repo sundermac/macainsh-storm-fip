@@ -82,7 +82,13 @@ p {
     font-size: 25px;
     line-height: 55px;
     justify-self: center;
+    transition: all ease-in-out .2s;
 }
+
+#main-nav ul li a:hover {
+    color: #fff;
+}
+
 
 
 
