@@ -246,6 +246,17 @@ header {
     cursor: pointer;
 }
 
+/* --What's New-- */
+#whats-new img {
+    display: flex;
+    justify-self: center;
+}
+#whats-new-content {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+
 
 
 /* 6. --Products Display-- */
