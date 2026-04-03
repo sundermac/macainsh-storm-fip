@@ -138,11 +138,22 @@ header {
     margin-right: 20px;
     width: 30px;
     cursor: pointer;
+    transition: all ease-in-out .2s;
+}
+
+#search:hover {
+    filter: contrast(500%);
 }
 
 #cart {
     width: 30px;
     cursor: pointer;
+    transition: all ease-in-out .2s;
+    
+}
+
+#cart:hover {
+    filter: contrast(500%);
 }
 
 
