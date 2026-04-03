@@ -323,10 +323,20 @@ header {
 #facebook {
     margin-right: 20px;
     cursor: pointer;
+    transition: all ease-in-out .3s;
+}
+
+#facebook:hover {
+    filter: contrast(500%);
 }
 
 #instagram {
     cursor: pointer;
+    transition: all ease-in-out .2s;
+}
+
+#instagram:hover {
+    filter: contrast(500%);
 }
 
 #follow-us {
@@ -469,6 +479,11 @@ header {
     .m-l-foot-nav li a {
         color: #2A4776;
         text-decoration: none;
+        transition: all ease-in-out .3s;
+    }
+
+    .m-l-foot-nav li a:hover {
+        color: #ffffff;
     }
 
     #follow-us {
