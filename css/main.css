@@ -530,10 +530,15 @@ header {
 
 /* --Product Cards-- */
 .product-card {
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+    box-shadow: 0 4px 8px 0 rgba(216, 216, 216, 0.4);
     padding: 12px;
     border-radius: 18px;
     margin-bottom: 50px;
+    transition: all ease-in-out .3s;
+}
+
+.product-card:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
 }
 
 .product-card h3 {
@@ -555,11 +560,16 @@ header {
     display: flex;
     justify-self: center;
     margin-bottom: 10px;
+    transition: all ease-in-out .3s;
+}
+
+.product-card-bottle:hover {
+    cursor: pointer;
+    transform: rotate(-15deg);
 }
 
 .product-card-reviews {
     display: flex;
-    
 }
 
 .product-card-reviews p {
@@ -568,6 +578,8 @@ header {
     color: #ACA9A9;
     font-size: 20px;
 }
+
+
 
 /* --Tablet Queries-- */
 @media screen and (min-width: 768px) {
