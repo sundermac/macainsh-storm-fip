@@ -1,22 +1,24 @@
 /* 
 CSS Guide
-1. General Styles
-2. Main Nav
-3. Header
-4. Hero Images
-5. Buttons
-6. Products Display
-7. Product Cards
-8. Contact Form
-9. Find Us
+01. General Styles
+02. Main Nav
+03. Header
+04. Hero Images
+05. Nested Grid
+06. What's New
+07. Product Display
+08. Latest Video
+09. Find Us in Store
 10. Footer
 11. Tablet Queries
 12. Desktop Queries
+13. Products Page
+14. Contact Page
 */
 
 
 
-/* 1. --General Styles-- */
+/* 01. ---General Styles--- */
 h2 {
     font-family: "ohno-softie-variable",sans-serif;
     font-size: 43px;
@@ -46,9 +48,29 @@ p {
     margin-bottom: 40px;
 }
 
+.yellow-btn {
+    color: #2A4776;
+    background-color: #E5D28C;
+    border: #F5EDD1 solid 4px;
+    border-radius: 50px;
+    padding-bottom: 8px;
+    text-align: center;
+    font-size: 25px;
+    font-family: josefin-sans, sans-serif;
+    font-weight: 400;
+    transition: all ease-in-out .3s;
+}
+
+.yellow-btn:hover {
+    color: #E5D28C;
+    background-color: #2A4776;
+    border: #7F91AC solid 4px;
+    cursor: pointer;
+}
 
 
-/* 2. --Main Nav-- */
+
+/* 02. ---Main Nav--- */
 #main-nav {
     display: none;
     font-family: josefin-sans, sans-serif;
@@ -70,11 +92,8 @@ p {
     transform: rotate(90deg);
 }
 
-#main-nav ul {
-    list-style-type: none;
-}
-
 #main-nav ul li {
+    list-style-type: none;
     text-align: center;
 }
 
@@ -94,7 +113,7 @@ p {
 
 
 
-/* 3. --Header-- */
+/* 03. ---Header--- */
 header {
     padding-top: 20px;
     padding-bottom: 20px;
@@ -122,7 +141,7 @@ header {
 
 
 
-/* 4. --Hero Images-- */
+/* 04. ---Hero Images--- */
 #home-hero {
     margin-bottom: 39px;
     justify-self: center;
@@ -141,7 +160,7 @@ header {
 
 
 
-/* 5. --Nested Grid-- */
+/* 05. ---Nested Grid--- */
 #nested-hero-grid {
     grid-column: 2/3;
     grid-row: 1;
@@ -228,41 +247,16 @@ header {
 
 
 
-/* 5. --Buttons-- */
-.yellow-btn {
-    color: #2A4776;
-    background-color: #E5D28C;
-    border: #F5EDD1 solid 4px;
-    border-radius: 50px;
-    padding-bottom: 8px;
-    text-align: center;
-    font-size: 25px;
-    font-family: josefin-sans, sans-serif;
-    font-weight: 400;
-    transition: all ease-in-out .3s;
-}
-
-.yellow-btn:hover {
-    color: #E5D28C;
-    background-color: #2A4776;
-    border: #7F91AC solid 4px;
-    cursor: pointer;
-}
-
-/* --What's New-- */
+/* 06. ---What's New--- */
 #whats-new img {
     display: flex;
     justify-self: center;
-}
-#whats-new-content {
-    display: flex;
-    flex-direction: column;
-    align-self: center;
+    margin-bottom: 15px;
 }
 
 
 
-/* 6. --Products Display-- */
+/* 07. ---Products Display--- */
 #hp-orange {
     display: flex;
     justify-self: center;
@@ -287,109 +281,11 @@ header {
 
 
 
-
-/* 7. --Product Cards-- */
-#product-store-text {
-    margin-bottom: 47px
-}
-
-.product-card {
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
-    padding: 12px;
-    border-radius: 18px;
-    margin-bottom: 50px;
-}
-
-.product-card h3 {
-    font-size: 35px;
-    font-family: "ohno-softie-variable",sans-serif;
-    color: #2A4776;
-    font-weight: 600;
-}
-
-.product-price {
-    font-size: 20px;
-    text-align: left;
-    margin-bottom: 20px;
-    font-family: josefin-sans, sans-serif;
-    font-weight: 400;
-}
-
-.product-bottle {
-    display: flex;
-    justify-self: center;
-    margin-bottom: 10px;
-}
-
-.product-stars {
-    display: flex;
-    
-}
-
-.product-stars p {
-    margin-left: 10px;
-    margin-top: 25px;
-    color: #ACA9A9;
-    font-size: 20px;
-}
+/* 08. --Latest Video-- */
 
 
 
-/* 8. --Contact Form-- */
-#contact-form-con {
-    display: flex;
-    justify-content: center;
-    margin-top: 15px;
-}
-
-#contact-form input, textarea {
-    display: flex;
-    flex-direction: column;
-    font-family: josefin-sans, sans-serif;
-    width: 412px;    
-    border: 3px solid #E3BCD9;
-    border-radius: 30px;
-    padding: 15px;
-    background-color: #F9F9F9;
-    font-size: 16px;
-    margin-bottom: 20px;
-    margin-top: 10px;
-}
-
-#contact-form input::placeholder, textarea::placeholder {
-    padding: 5px;
-    font-weight: 300;
-}
-
-#contact-form label {
-    font-family: josefin-sans, sans-serif;
-}
-
-#contact-form textarea {
-    height: 365px;
-}
-
-#contact-form input[type="submit"]{
-    display: flex;
-    background-color: #E5D28C;
-    border: #F5EDD1 4px solid;
-    color: #2A4776;
-    font-size: 20px;
-    padding:  8px 8px 12px 8px;
-    transition: all ease-in-out .3s;
-    margin-top: 20px;
-    margin-bottom: 60px;
-}
-
-#contact-form input[type="submit"]:hover {
-    background-color: #2A4776;
-    border: #7F91AC 4px solid;
-    color: #E5D28C;
-    cursor: pointer;
-}
-
-
-/* 9. --Find Us-- */
+/* 09. ---Find Us--- */
 #find-us h2 {
     margin-bottom: 38px;
 }
@@ -402,7 +298,7 @@ header {
 
 
 
-/* 10. --Footer-- */
+/* 10. ---Footer--- */
 #logo-foot {
     padding-top: 23px;
     justify-self: center;
@@ -445,10 +341,10 @@ header {
 
 
 
-/* 11. --Tablet Queries-- */
+/* 11. ---Tablet Queries--- */
 @media screen and (min-width: 768px) {
     
-    /* Header */
+    /* --Header-- */
     #logo-head {
         order: -2;
         align-self: center;
@@ -478,7 +374,7 @@ header {
     }
 
 
-    /* Nested Grid */
+    /* --Nested Grid-- */
     #nested-hero-grid h2 {
         font-size: 40px;
         margin-bottom: 20px;
@@ -503,70 +399,27 @@ header {
     }
 
 
-    /* Whats New */
+    /* --Whats New-- */
     #whats-new h2 {
-            order: -2;
-        }
+        order: -2;
+    }
+
+    #whats-new img {
+        margin-bottom: 0px;
+    }
     
     #whats-new-content {
         order: -1;
     }
-
-
-    /* Product Display */   
-    #hp-orange {
-        padding: 16px 70px;
-    }
     
-    #hp-blue {
-        display: flex;
-        justify-self: center;
-        background-color: #7EBEE1;
-        padding: 16px 70px;
-        border-radius: 18px;
-        margin-top: 26px;
-    }
-    
-    #hp-melon{
-        display: flex;
-        justify-self: center;
-        background-color: #E27184;
-        padding: 16px 70px;
-        border-radius: 18px;
-        margin-top: 26px;
-    }
-    
-    
-    /* Contact Form */    
-    #contact-form {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
+    #whats-new-content {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
     }
 
-    #contact-form input, textarea {
-        width: 700px;    
-        font-size: 18px;
-        margin-bottom: 20px;
-        margin-top: 10px;
-    }
 
-    #contact-form label {
-        font-size: 18px;
-    }
-
-    #contact-form textarea {
-        height: 290px;
-    }
-
-    #contact-form input[type="submit"]{
-        width: 358px;
-        align-self: flex-end;
-        margin-top: 10px;
-    }
-
-    
-    /* Footer */
+    /* --Footer-- */
     #logo-foot {
         justify-self: normal;
         align-self: center;
@@ -626,16 +479,16 @@ header {
 
 
 
-/* 12. --Desktop Queries-- */
+/* 12. ---Desktop Queries--- */
 @media screen and (min-width: 1200px) {
 
-    /* Header */
+    /* --Header-- */
     #main-nav ul li a {
         font-size: 25px;
     }
 
 
-    /* Nested Grid */
+    /* --Nested Grid-- */
     #nested-hero-grid h2 {
         font-size: 50px;
     }
@@ -657,9 +510,102 @@ header {
         margin-top: 25px;
         font-size: 25px;
     }
-    
+}
 
-    /* Product Display */
+
+
+/* 13. ---Products Page--- */
+
+/* --Product Store-- */
+#product-store-text {
+    margin-bottom: 47px
+}
+
+
+/* --Product Cards-- */
+.product-card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+    padding: 12px;
+    border-radius: 18px;
+    margin-bottom: 50px;
+}
+
+.product-card h3 {
+    font-size: 35px;
+    font-family: "ohno-softie-variable",sans-serif;
+    color: #2A4776;
+    font-weight: 600;
+}
+
+.product-card-price {
+    font-size: 20px;
+    text-align: left;
+    margin-bottom: 20px;
+    font-family: josefin-sans, sans-serif;
+    font-weight: 400;
+}
+
+.product-card-bottle {
+    display: flex;
+    justify-self: center;
+    margin-bottom: 10px;
+}
+
+.product-card-reviews {
+    display: flex;
+    
+}
+
+.product-card-reviews p {
+    margin-left: 10px;
+    margin-top: 25px;
+    color: #ACA9A9;
+    font-size: 20px;
+}
+
+/* --Tablet Queries-- */
+@media screen and (min-width: 768px) {
+
+    /* --Product Display-- */   
+    #hp-orange {
+        padding: 16px 70px;
+    }
+    
+    #hp-blue {
+        display: flex;
+        justify-self: center;
+        background-color: #7EBEE1;
+        padding: 16px 70px;
+        border-radius: 18px;
+        margin-top: 26px;
+    }
+    
+    #hp-melon{
+        display: flex;
+        justify-self: center;
+        background-color: #E27184;
+        padding: 16px 70px;
+        border-radius: 18px;
+        margin-top: 26px;
+    }
+}
+
+/* --Desktop Queries-- */
+@media screen and (min-width: 1200px) {
+
+    /* --Product Display-- */
+    #hp-orange {
+        padding: 16px 70px;
+    }
+    
+    #hp-blue {
+        padding: 15px 65px;
+    }
+    
+    #hp-melon{
+        padding: 15px 65px;
+    }
+
     #hp-mango {
         display: flex;
         justify-self: center;
@@ -669,8 +615,101 @@ header {
         border-radius: 18px;
         margin-top: 26px;
     }
+}   
 
-    /* Contact Form */
+
+
+/* 14. ---Contact Page--- */
+
+/* --Contact Form-- */
+#contact-form-con {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+#contact-form input, textarea {
+    display: flex;
+    flex-direction: column;
+    font-family: josefin-sans, sans-serif;
+    width: 412px;    
+    border: 3px solid #E3BCD9;
+    border-radius: 30px;
+    padding: 15px;
+    background-color: #F9F9F9;
+    font-size: 16px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+#contact-form input::placeholder, textarea::placeholder {
+    padding: 5px;
+    font-weight: 300;
+}
+
+#contact-form label {
+    font-family: josefin-sans, sans-serif;
+}
+
+#contact-form textarea {
+    height: 365px;
+}
+
+#contact-form input[type="submit"]{
+    display: flex;
+    background-color: #E5D28C;
+    border: #F5EDD1 4px solid;
+    color: #2A4776;
+    font-size: 20px;
+    padding:  8px 8px 12px 8px;
+    transition: all ease-in-out .3s;
+    margin-top: 20px;
+    margin-bottom: 60px;
+}
+
+#contact-form input[type="submit"]:hover {
+    background-color: #2A4776;
+    border: #7F91AC 4px solid;
+    color: #E5D28C;
+    cursor: pointer;
+}
+
+/* --Tablet Queries-- */
+@media screen and (min-width: 768px) {
+
+    /* --Contact Form-- */    
+    #contact-form {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #contact-form input, textarea {
+        width: 700px;    
+        font-size: 18px;
+        margin-bottom: 20px;
+        margin-top: 10px;
+    }
+
+    #contact-form label {
+        font-size: 18px;
+    }
+
+    #contact-form textarea {
+        height: 290px;
+    }
+
+    #contact-form input[type="submit"]{
+        width: 358px;
+        align-self: flex-end;
+        margin-top: 10px;
+    }
+}
+
+/* --Desktop Queries-- */
+@media screen and (min-width: 1200px) {
+
+    /*--Contact Form-- */    
     #contact-form input, textarea {
         width: 970px;    
         font-size: 18px;
