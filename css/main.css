@@ -184,7 +184,7 @@ header {
     background-color: #2A4776;
     padding-top: 7px;
     padding-bottom: 10px;
-    border: 4px, solid #7F91AC;
+    border: 4px solid #7F91AC;
     width: 200px;
     display: flex;
     justify-content: center;
@@ -196,7 +196,7 @@ header {
 #nested-navy-btn a:hover {
     color: #2A4776;
     background-color: #E5D28C;
-    border: 4px, solid #F5EDD1;
+    border: 4px solid #F5EDD1;
 }
 
 #nested-yellow-btn a {
@@ -207,7 +207,7 @@ header {
     background-color: #E5D28C;
     padding-top: 7px;
     padding-bottom: 10px;
-    border: 4px, solid #F5EDD1;
+    border: 4px solid #F5EDD1;
     width: 200px;
     display: flex;
     justify-content: center;
@@ -220,7 +220,7 @@ header {
 #nested-yellow-btn a:hover {
     color: #E5D28C;
     background-color: #2A4776;
-    border: 4px, solid #7F91AC;
+    border: 4px solid #7F91AC;
 }
 
 
