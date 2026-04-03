@@ -296,6 +296,17 @@ header {
     display: none;
 }
 
+@keyframes pulsing {
+    0% {transform: scale(1);}
+    50% {transform: scale(1.05);}
+    100% {transform: scale(1);}
+}
+
+.bottle-animate:hover {
+    cursor: pointer;
+    animation: pulsing infinite 1s ease-in-out;
+}
+
 
 
 /* 08. --Latest Video-- */
@@ -445,6 +456,30 @@ header {
     align-self: center;
     }
 
+    /* --Product Display-- */   
+    #hp-orange {
+        padding: 16px 70px;
+    }
+    
+    #hp-blue {
+        display: flex;
+        justify-self: center;
+        margin-bottom: 30px;
+        background-color: #7EBEE1;
+        padding: 16px 70px;
+        border-radius: 18px;
+        margin-top: 26px;
+    }
+    
+    #hp-melon{
+        display: flex;
+        justify-self: center;
+        margin-bottom: 30px;
+        background-color: #E27184;
+        padding: 16px 70px;
+        border-radius: 18px;
+        margin-top: 26px;
+    }
 
     /* --Footer-- */
     #logo-foot {
@@ -541,6 +576,29 @@ header {
         width: 365px;
         margin-top: 25px;
         font-size: 25px;
+    }    
+    
+    /* --Product Display-- */
+    #hp-orange {
+        padding: 16px 70px;
+    }
+    
+    #hp-blue {
+        padding: 15px 65px;
+    }
+    
+    #hp-melon{
+        padding: 15px 65px;
+    }
+
+    #hp-mango {
+        display: flex;
+        justify-self: center;
+        margin-bottom: 30px;
+        background-color: #E5D28C;
+        padding: 15px 65px;
+        border-radius: 18px;
+        margin-top: 26px;
     }
 }
 
@@ -604,62 +662,6 @@ header {
     color: #ACA9A9;
     font-size: 20px;
 }
-
-
-
-/* --Tablet Queries-- */
-@media screen and (min-width: 768px) {
-
-    /* --Product Display-- */   
-    #hp-orange {
-        padding: 16px 70px;
-    }
-    
-    #hp-blue {
-        display: flex;
-        justify-self: center;
-        background-color: #7EBEE1;
-        padding: 16px 70px;
-        border-radius: 18px;
-        margin-top: 26px;
-    }
-    
-    #hp-melon{
-        display: flex;
-        justify-self: center;
-        background-color: #E27184;
-        padding: 16px 70px;
-        border-radius: 18px;
-        margin-top: 26px;
-    }
-}
-
-/* --Desktop Queries-- */
-@media screen and (min-width: 1200px) {
-
-    /* --Product Display-- */
-    #hp-orange {
-        padding: 16px 70px;
-    }
-    
-    #hp-blue {
-        padding: 15px 65px;
-    }
-    
-    #hp-melon{
-        padding: 15px 65px;
-    }
-
-    #hp-mango {
-        display: flex;
-        justify-self: center;
-        margin-bottom: 30px;
-        background-color: #E5D28C;
-        padding: 15px 65px;
-        border-radius: 18px;
-        margin-top: 26px;
-    }
-}   
 
 
 
