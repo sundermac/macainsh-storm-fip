@@ -611,7 +611,6 @@ header {
     margin-bottom: 47px
 }
 
-
 /* --Product Cards-- */
 .product-card {
     box-shadow: 0 4px 8px 0 rgba(216, 216, 216, 0.4);
@@ -661,6 +660,112 @@ header {
     margin-top: 18px;
     color: #ACA9A9;
     font-size: 20px;
+}
+
+/* --Product Popups-- */
+#popup { 
+    width: 100vw;
+    height: 100vh; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.85);
+    z-index: 2;
+    display: none;
+    justify-content: center; 
+    align-items: center;
+}
+
+#popup.slide-toggle{ 
+    display: flex;
+}
+
+.popup-card {
+    width: 320px;
+    background-color: #fff;
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.popup-image {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    filter: drop-shadow(0 10px 10px rgba(0, 0, 0, 0.123));
+}
+
+.close-btn {
+    text-decoration: none;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 40px;
+    color: #2b4570;
+    font-family: "ohno-softie-variable",sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all ease-in-out .3s;
+}
+
+.close-btn:hover {
+    color: #E27184;
+}
+
+.popup-content {
+    padding: 24px;
+    color: #2b4570;
+    font-family: josefin-sans, sans-serif;
+    font-weight: 300;
+}
+
+.popup-title {
+    font-family: "ohno-softie-variable",sans-serif;
+    margin-bottom: 12px;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.popup-description {
+    font-size: 15px;
+    line-height: 30px;
+    color: #4a4a4a;
+    margin-bottom: 0;
+}
+
+.popup-cta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.popup-price {
+    font-size: 20px;
+    font-weight: 400;
+    margin-left: 25px;
+    padding-top: 20px;
+    font-family: josefin-sans, sans-serif;
+}
+
+.popup-btn {
+    background-color: #E5D28C;
+    color: #2A4776;
+    border: #F5EDD1 solid 4px;
+    padding: 5px 28px 8px 28px;
+    border-radius: 30px;
+    font-weight: 400;
+    cursor: pointer;
+    margin-right: 25px;
+    font-family: josefin-sans, sans-serif;
+    transition: all ease-in-out .3s;
+}
+
+.popup-btn:hover {
+    background-color: #2A4776;
+    color: #E5D28C;
+    border: #7F91AC solid 4px;
 }
 
 
