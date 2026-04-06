@@ -633,18 +633,10 @@ header {
     font-weight: 600;
 }
 
-.product-card-price {
-    font-size: 20px;
-    text-align: left;
-    margin-bottom: 20px;
-    font-family: josefin-sans, sans-serif;
-    font-weight: 400;
-}
-
 .product-card-bottle {
     display: flex;
     justify-self: center;
-    margin-bottom: 10px;
+    margin-bottom: 40px;
     transition: all ease-in-out .3s;
 }
 
