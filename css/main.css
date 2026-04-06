@@ -725,6 +725,13 @@ header {
     font-size: 16px;
     line-height: 30px;
     color: #4a4a4a;
+    margin-bottom: 30px;
+}
+
+.popup-ingridents {
+    font-size: 16px;
+    line-height: 30px;
+    color: #4a4a4a;
     margin-bottom: 0;
 }
 
@@ -772,18 +779,16 @@ header {
     }
 
     .popup-title {
-        font-family: "ohno-softie-variable", sans-serif;
-        margin-bottom: 12px;
         font-size: 35px;
-        font-weight: 600;
     }
 
     .popup-description {
         font-size: 18px;
-        line-height: 30px;
-        color: #4a4a4a;
-        margin-bottom: 0;
     }
+
+    .popup-ingridents {
+        font-size: 18px;
+    }   
 
     .popup-price {
         font-size: 25px;
@@ -801,10 +806,7 @@ header {
     }
 
     .popup-title {
-        font-family: "ohno-softie-variable", sans-serif;
-        margin-bottom: 12px;
         font-size: 40px;
-        font-weight: 600;
     }
 
     .popup-btn {
