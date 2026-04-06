@@ -17,26 +17,31 @@ let drinks = [
     {
         title: "Orange Oasis",
         desc: "A bottle of sunshine that gives you a burst of energy for the playground.",
-        img: "images/bottle-orange.png",
+        ingridents: "INGREDIENTS: Filtered Sparkling Water, Mandarin Orange Juice, Natural Cane Sugar, Citric Acid, Natural Beta-Carotene (for colour), Natural Vanilla Extract.",
+        img: "images/bottle-orange.png"
     },
     {
         title: "Bluberry Blast",
         desc: "Super blue and super cool. It tastes like a handful of fresh berries from the forest.",
-        img: "images/bottle-blueberry.png",
+        ingridents: "INGREDIENTS: Filtered Sparkling Water, Sweet Blueberry Juice, Natural Cane Sugar, Citric Acid, Fruit and Vegetable Juice (for color), Natural Blueberry Flavour.",
+        img: "images/bottle-blueberry.png"
     },
     {
         title: "Watermelon Splash",
         desc: "Clear, crisp, and bursting with watermelon flavor. It is the light and fruity way to stay refreshed all day long.",
-        img: "images/bottle-watermelon.png",
+        ingridents: "INGREDIENTS: Filtered Sparkling Water, Watermelon Juice, Natural Cane Sugar, Citric Acid, Fruit and Vegetable Juice (for color), Natural Watermelon Flavour.",
+        img: "images/bottle-watermelon.png"
     },
     {
         title: "Tropical Mango",
         desc: "A sweet island treat that makes every sip feel like a vacation at the beach.",
-        img: "images/bottle-mango.png",
+        ingridents: "INGREDIENTS: Filtered Sparkling Water, Mango Puree (Filtered), Natural Cane Sugar, Citric Acid, Natural Beta-Carotene (for color), Natural Mango Flavour.",
+        img: "images/bottle-mango.png"
     },
     {
         title: "Grape Punch",
         desc: "Big, bold grape flavor that packs a punch and keeps the fun going all day long.",
+        ingridents: "INGREDIENTS: Filtered Sparkling Water, Concord Grape Juice, Natural Cane Sugar, Citric Acid, Grape Skin Extract (for color), Natural Grape Flavour.",
         img: "images/bottle-grape.png"
     }
 ];
@@ -58,13 +63,13 @@ function displayPopup(){
     popup.classList.toggle("slide-toggle");
 
     // Add heading of Drink Details into the popup for the document outline.
-    let drinkHead = document.createElement("h2");
+    const drinkHead = document.createElement("h2");
     drinkHead.textContent = `Drink Details`;
     drinkHead.classList = "visually-hidden";
     card.prepend(drinkHead); //Adds the content at start of the container instead of at the end.
 
     // Add the close button to the popup and set the href to blank so it reloads the current page.
-    let closeBtn = document.createElement("a");
+    const closeBtn = document.createElement("a");
     closeBtn.href = ``;
     closeBtn.textContent = `x`;
     closeBtn.classList = "close-btn";
@@ -89,14 +94,20 @@ function displayPopup(){
     drinkDesc.classList = "popup-description";
     content.appendChild(drinkDesc);
 
+    // Add the ingridents of the drink to the popup --> will change depending on what product card is pressed.
+    let drinkIng = document.createElement("p");
+    drinkIng.textContent = drinks[this.dataset.drinkIndex].ingridents;
+    drinkIng.classList = "popup-ingridents";
+    content.appendChild(drinkIng);
+
     // Add the price the drink popup --> it does not change when other product cards are pressed.
-    let drinkPrice = document.createElement("p");
+    const drinkPrice = document.createElement("p");
     drinkPrice.textContent = `$2.99`;
     drinkPrice.classList = "popup-price";
     cta.appendChild(drinkPrice);
 
     // Add the cart button the drink popup --> it does not change when other product cards are pressed.
-    let cartBtn = document.createElement("div");
+    const cartBtn = document.createElement("div");
     cartBtn.textContent = `Add to Cart`;
     cartBtn.classList = "popup-btn";
     cta.appendChild(cartBtn);
