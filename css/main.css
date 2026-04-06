@@ -272,6 +272,12 @@ header {
     margin-bottom: 15px;
 }
 
+#whats-new-content {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+
 
 
 /* 07. ---Products Display--- */
@@ -450,12 +456,7 @@ header {
     #whats-new-content {
         order: -1;
     }
-    
-    #whats-new-content {
-    display: flex;
-    flex-direction: column;
-    align-self: center;
-    }
+
 
     /* --Product Display-- */   
     #hp-orange {
