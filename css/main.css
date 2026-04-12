@@ -317,6 +317,11 @@ header {
 
 
 /* 08. --Latest Video-- */
+video {
+    border-radius: 18px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
 
 
 
