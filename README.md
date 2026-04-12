@@ -1,6 +1,6 @@
 # Orbitz Rebrand 💫
 
-The Level 2 Interactive Media Design FIP is a brand redesign of Orbitz. The website uses responsive web design to provide a seamless experience for users across mobile, tablet, and desktop devices. It showcases delicious fruit beverages, with a focus on supporting children interested in learning about Outer Space.
+The Level 2 Interactive Media Design FIP is a brand redesign of Orbitz. The redesign introduces new colourful fruit drinks, follows the new brand style guide, provides a place to buy drinks, and promotes the brand. The website uses responsive web design to provide a seamless experience for users across mobile, tablet, and desktop devices. Additionally, product cards display a pop-up, triggered by JavaScript when clicked.
 
 ## 💾 Installation
 No installation required. Download the zip file and extract it.
