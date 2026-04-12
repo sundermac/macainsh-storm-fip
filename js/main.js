@@ -17,31 +17,31 @@ let drinks = [
     {
         title: "Orange Oasis",
         desc: "A bottle of sunshine that gives you a burst of energy for the playground.",
-        ingridents: "INGREDIENTS: Filtered Sparkling Water, Mandarin Orange Juice, Natural Cane Sugar, Citric Acid, Natural Beta-Carotene (for colour), Natural Vanilla Extract.",
+        ingredients: "INGREDIENTS: Filtered Sparkling Water, Mandarin Orange Juice, Natural Cane Sugar, Citric Acid, Natural Beta-Carotene (for colour), Natural Vanilla Extract.",
         img: "images/bottle-orange.png"
     },
     {
         title: "Bluberry Blast",
         desc: "Super blue and super cool. It tastes like a handful of fresh berries from the forest.",
-        ingridents: "INGREDIENTS: Filtered Sparkling Water, Sweet Blueberry Juice, Natural Cane Sugar, Citric Acid, Fruit and Vegetable Juice (for color), Natural Blueberry Flavour.",
+        ingredients: "INGREDIENTS: Filtered Sparkling Water, Sweet Blueberry Juice, Natural Cane Sugar, Citric Acid, Fruit and Vegetable Juice (for color), Natural Blueberry Flavour.",
         img: "images/bottle-blueberry.png"
     },
     {
         title: "Watermelon Splash",
         desc: "Clear, crisp, and bursting with watermelon flavor. It is the light and fruity way to stay refreshed all day long.",
-        ingridents: "INGREDIENTS: Filtered Sparkling Water, Watermelon Juice, Natural Cane Sugar, Citric Acid, Fruit and Vegetable Juice (for color), Natural Watermelon Flavour.",
+        ingredients: "INGREDIENTS: Filtered Sparkling Water, Watermelon Juice, Natural Cane Sugar, Citric Acid, Fruit and Vegetable Juice (for color), Natural Watermelon Flavour.",
         img: "images/bottle-watermelon.png"
     },
     {
         title: "Tropical Mango",
         desc: "A sweet island treat that makes every sip feel like a vacation at the beach.",
-        ingridents: "INGREDIENTS: Filtered Sparkling Water, Mango Puree (Filtered), Natural Cane Sugar, Citric Acid, Natural Beta-Carotene (for color), Natural Mango Flavour.",
+        ingredients: "INGREDIENTS: Filtered Sparkling Water, Mango Puree (Filtered), Natural Cane Sugar, Citric Acid, Natural Beta-Carotene (for color), Natural Mango Flavour.",
         img: "images/bottle-mango.png"
     },
     {
         title: "Grape Punch",
         desc: "Big, bold grape flavor that packs a punch and keeps the fun going all day long.",
-        ingridents: "INGREDIENTS: Filtered Sparkling Water, Concord Grape Juice, Natural Cane Sugar, Citric Acid, Grape Skin Extract (for color), Natural Grape Flavour.",
+        ingredients: "INGREDIENTS: Filtered Sparkling Water, Concord Grape Juice, Natural Cane Sugar, Citric Acid, Grape Skin Extract (for color), Natural Grape Flavour.",
         img: "images/bottle-grape.png"
     }
 ];
@@ -94,10 +94,10 @@ function displayPopup(){
     drinkDesc.classList = "popup-description";
     content.appendChild(drinkDesc);
 
-    // Add the ingridents of the drink to the popup --> will change depending on what product card is pressed.
+    // Add the ingredients of the drink to the popup --> will change depending on what product card is pressed.
     let drinkIng = document.createElement("p");
-    drinkIng.textContent = drinks[this.dataset.drinkIndex].ingridents;
-    drinkIng.classList = "popup-ingridents";
+    drinkIng.textContent = drinks[this.dataset.drinkIndex].ingredients;
+    drinkIng.classList = "popup-ingredients";
     content.appendChild(drinkIng);
 
     // Add the price the drink popup --> it does not change when other product cards are pressed.
